@@ -1,0 +1,23 @@
+info:
+  name: actualizar persona
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:8080/personas/3
+  body:
+    type: json
+    data: |-
+      {
+          "id": 3,
+          "nombre": "yordi",
+          "apellido": "mas na",
+          "email": "yordi@gastitas.mas.na"
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
